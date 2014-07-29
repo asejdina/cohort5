@@ -1,0 +1,22 @@
+each person in people
+
+  .bio(style='background-image: url(img/#{person.pic})')
+
+    //- .pic(style='background-image: url(img/#{person.pic})')
+    
+
+
+    .bioText.hidden
+      h2 #{person.name}
+      p #{person.bio}
+      .social
+        if(person.fb !== "")
+          a(href='#{person.fb}').facebook
+        if(person.tw !== "")
+          a(href='#{person.tw}').twitter
+        if(person.li !== "")
+          a(href='#{person.li}').linkedin
+        if(person.ig !== "")
+          a(href='#{person.ig}').instagram
+        if(person.git !== "")
+          a(href='#{person.git}').github
