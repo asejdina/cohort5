@@ -53,7 +53,7 @@ html, body {
 
 .sectionHeader {
   width: 50%;
-  height: 18%;
+  height: 15%;
   padding-bottom: 2%;
   margin: 1% 25%;
   position: relative;
@@ -73,9 +73,12 @@ html, body {
 
 .ourTeamText {
   background-image: url('/img/ourteam-04.svg');
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .ourClientsText {
+  height: 10%;
   background-image: url('/img/ourclients.svg');
   // border-bottom: 2px solid black;
 }
@@ -93,13 +96,29 @@ html, body {
   background-attachment: fixed;
 }
 
+#whoAreWe h2 {
+  font-family: serif;
+}
 
 //============================================People
 
+#ourTeam {
+  width: 100%;
+  height: 12%;
+  padding: 2% 0 0 0;
+  text-align: center;
+  background-color: @logo-blue;
+  background-image: url('/img/gray5-06.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #ourPeople {
   width: 100%;
-  height: 350px;
-  padding: 1% 0;
+  height: 230px;
+  padding: 0 0 2% 0;
   position: relative;
   display: block;
   background-color: @logo-blue;
@@ -117,9 +136,10 @@ html, body {
 }
 
 #people {
-  width: 3000px;
-  height: 90%;
-  margin: 0 5%;
+  width: 1850px;
+  height: 100%;
+  margin: 0 1%;
+  padding: 0;
   text-align: left;
   display: inline-block;
   overflow-x: scroll;
@@ -128,10 +148,10 @@ html, body {
 
 .bio {
   width: 200px;
-  height: 60%;
+  height: 100%;
   position: relative;
   display: inline-block;
-  //margin: 2%;
+  margin: 0;
   text-align: center;
   line-height: 80%;
 //}
@@ -206,12 +226,16 @@ html, body {
   background-attachment: fixed;
 }
 
+#work h2 {
+  font-family: serif;
+}
+
 //============================================Clients
 
 
 #clients {
   width: 100%;
-  height: 70%;
+  height: 1400px;
   position: relative;
   display: block;
   padding-top: 2%;
@@ -228,7 +252,7 @@ html, body {
 
 .clientContainer {
   width: 100%;
-  height: 20%;
+  height: 15%;
   color: white;
   transition: color 0.5s ease;
 }
@@ -238,22 +262,21 @@ html, body {
 }
 
 .client {
-  width: 45%;
-  height: 100%;
-  margin: 0 0 0 5%;
+  width: 100%;
+  height: 70%;
+  margin: 3% 0;
   position: relative;
-  float: left;
-  //display: block;
+  display: block;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   // background-color: white;
   transition: background-position 0.5s ease;
 }
 
-.client:hover {
-  background-position: right;
-}
+// .client:hover {
+//   background-position: right;
+// }
 
 .dart {
   background-image: url('/img/DART-logo.svg');
@@ -271,12 +294,36 @@ html, body {
   background-image: url('/img/feedthebirdslogo.jpg');
 }
 
-.desc {
-  width: 43%;
-  height: 100%;
-  margin: 0 5% 0 0;
-  text-align: left;
-  padding-left: 2%;
-  float: right;
-  vertical-align: middle;
+// .desc {
+//   width: 40%;
+//   // height: 20%;
+//   margin: 0 30% 5% 30%;
+//   text-align: center;
+//   position: relative;
+//   display: block;
+//   border: 3px solid white;
+//   border-radius: 5px;
+//   transition: border 0.5s ease;
+// }
+//
+// .desc:hover {
+//   border: 3px solid @logo-blue;
+// }
+
+
+//============================================Footer
+
+#footer {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  position: relative;
+  display: block;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+h4.email, h3.email {
+  font-size: 3em;
+  color: @logo-blue;
 }
